@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const base = env.VITE_BASE_PATH || (repoName ? `/${repoName}/` : '/');
 
   return {
-    base,
     plugins: [react()],
+    base: '/2026-activities-portfolio/'
   };
 });
